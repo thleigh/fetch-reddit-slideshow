@@ -55,9 +55,22 @@ h1 {
 }
 
 .btn {
-    margin: 20px 200px 20px 0px;
+    height: 40px;
+    margin: 19px 0px 0px 0px;
+}
+
+#button-addon2 {
+    color: white;
+    margin: 19px 200px 0px 0px;
+    background-color: rgb(255, 255, 255,);
+}
+
+#button-addon1 {
     color: white;
     background-color: rgb(255, 255, 255,);
+    position: absolute;
+    text-align: center;
+    display: block;
 }
 
 .backgroundBox {
@@ -82,9 +95,12 @@ footer {
 }
 
 .son-image {
-    
-}
-
-.photoGrid {
     position: absolute;
+    display: inline-block;
+    margin: auto;
+    top: 300px;
+    width: 300px;
+    margin-top: -50%;
+    margin-left: -50%;
+    text-align: center;
 }
