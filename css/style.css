@@ -1,8 +1,81 @@
+@media only screen and (max-width: 1000px) {
+    body {
+        max-width: 1000px;
+    }
+}
+
+.backgroundImg {
+    background-size: 100%;
+    opacity: 90%;
+    z-index: 1;
+}
+
 body {
     font-family: 'Helvetica', 'sans-serif';
+    text-align: center;
+    border: 3px solid navy;
+    margin: 5px 5px 5px 5px;
+}
+
+#sonGif {
+    display: absolute;
+    display: block;
+    margin: 10px auto auto auto;
 }
 
 h1 {
-    text-align: center;
-    margin: 100px auto auto auto;
+    top: 40px;
+    color: rgb(230, 0, 0);
+    background-color: rgb(255, 255, 255, 0.5);
+}
+
+.container {
+    color: black;
+    background-color: rgb(255, 255, 255, 0.5);
+    padding: 20px;
+    z-index: 2;
+}
+
+.koreaLogo {
+    width: 60px;
+    top: 25px;
+    margin: 10px;
+    background: transparent;
+}
+
+.header1 {
+    position: relative;
+    display: inline;
+    margin-top: 40px;
+}
+
+.form-control {
+    margin: 20px 0px 20px 200px;
+}
+
+.btn {
+    margin: 20px 200px 20px 0px;
+    color: white;
+    background-color: rgb(255, 255, 255,);
+}
+
+.backgroundBox {
+    background-color: rgb(255, 255, 255, 0.05);
+    width: 800px;
+    height: 720px;
+    margin: auto;
+    top: 10px;
+}
+
+.aboveSearch {
+    margin: 40px auto -10px auto;
+}
+
+.input-group mb-3 {
+    background-color: rgb(255, 255, 255, 0.4);
+}
+
+footer {
+    position: absolute;
+    margin: auto;
 }
