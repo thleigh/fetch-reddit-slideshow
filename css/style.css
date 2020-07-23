@@ -6,6 +6,7 @@
 
 .backgroundImg {
     background-size: 100%;
+    max-width: 100%;
     opacity: 90%;
     z-index: 1;
 }
@@ -78,4 +79,12 @@ h1 {
 footer {
     position: absolute;
     margin: auto;
+}
+
+.son-image {
+    
+}
+
+.photoGrid {
+    position: absolute;
 }
