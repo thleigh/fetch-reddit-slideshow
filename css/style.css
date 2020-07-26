@@ -4,40 +4,31 @@
     }
 }
 
-.backgroundImg {
-    background-size: 100%;
-    max-width: 100%;
-    opacity: 90%;
-    z-index: 1;
-}
-
 body {
     font-family: 'Helvetica', 'sans-serif';
     text-align: center;
     border: 3px solid navy;
     margin: 5px 5px 5px 5px;
-}
-
-#sonGif {
-    display: absolute;
-    display: block;
-    margin: 10px auto auto auto;
+    height: 700px;
 }
 
 h1 {
-    top: 40px;
+    top: 50px;
     color: rgb(230, 0, 0);
     background-color: rgb(255, 255, 255, 0.5);
 }
 
+h3 {
+    margin-top: 15px;
+}
 .container {
     color: black;
     background-color: rgb(255, 255, 255, 0.5);
-    padding: 20px;
+    padding: 40px;
     z-index: 2;
 }
 
-.koreaLogo {
+.basketballLogo {
     width: 60px;
     top: 25px;
     margin: 10px;
@@ -59,18 +50,17 @@ h1 {
     margin: 19px 0px 0px 0px;
 }
 
-#button-addon2 {
-    color: white;
+#submit {
+    color: black;
     margin: 19px 200px 0px 0px;
     background-color: rgb(255, 255, 255,);
 }
 
-#button-addon1 {
-    color: white;
+#reset {
+    color: black;
     background-color: rgb(255, 255, 255,);
-    position: absolute;
-    text-align: center;
-    display: block;
+    margin: 0px 0px 10px 0px;
+    display: none;
 }
 
 .backgroundBox {
@@ -89,18 +79,10 @@ h1 {
     background-color: rgb(255, 255, 255, 0.4);
 }
 
-footer {
+footer p{
+    left: 0;
+    right: 0;
+    margin: 250px auto 0px auto;
+    width: 200px;
     position: absolute;
-    margin: auto;
-}
-
-.son-image {
-    position: absolute;
-    display: inline-block;
-    margin: auto;
-    top: 300px;
-    width: 300px;
-    margin-top: -50%;
-    margin-left: -50%;
-    text-align: center;
 }

@@ -1,0 +1,12 @@
+body {
+    background-color: chartreuse;
+}
+
+/* will toggle this using DOM manipulation */
+img {
+    display: none;
+}
+
+#slideshow {
+    display: none;
+}
