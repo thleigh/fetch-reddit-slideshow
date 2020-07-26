@@ -44,6 +44,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
     searchForm = document.querySelector('form');
     input = document.querySelector('input');
     resetButton = document.getElementById('reset');
+    console.log(input.value);
 
     searchForm.addEventListener('submit', (e)=>{
         e.preventDefault();

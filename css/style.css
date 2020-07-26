@@ -43,6 +43,11 @@ h3 {
 
 .form-control {
     margin: 20px 0px 20px 200px;
+    width: 100px;
+}
+
+form {
+    display: block;
 }
 
 .btn {
@@ -59,7 +64,15 @@ h3 {
 #reset {
     color: black;
     background-color: rgb(255, 255, 255,);
-    margin: 0px 0px 10px 0px;
+    margin-right: auto;
+    margin-left: auto;
+    left: 0;
+    right: 0;
+    width: 100px;
+    position: absolute;
+}
+
+#slideshow {
     display: none;
 }
 
@@ -72,7 +85,12 @@ h3 {
 }
 
 .aboveSearch {
-    margin: 40px auto -10px auto;
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin: -30px auto 0px auto;
+    width: 500px;
 }
 
 .input-group mb-3 {
@@ -80,9 +98,10 @@ h3 {
 }
 
 footer p{
+    top: 0px;
     left: 0;
     right: 0;
-    margin: 250px auto 0px auto;
     width: 200px;
+    margin:600px auto 0px auto;
     position: absolute;
 }
