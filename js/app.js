@@ -64,19 +64,20 @@
 let slideshow;
 let searchForm;
 let input;
-let baseEndpoint = 'https://www.reddit.com/search.json?q=basketball_memes';
+let baseEndpoint = 'http://www.reddit.com/search.json?q=basketball+nsfw:no';
 let resultsArray = [];
-let currIndex = 0;
+let i = 1;
 let resetButton;
 let interval;
 
 const changePhoto = () => {
-    if(resultsArray[currIndex+1].data.thumbnail) {
-        currIndex++
+    if(resultsArray[i].data.thumbnail) {
+        i++
+        console.log(resultsArray[i].data.thumbnail);
     } else {
         currIndex = 0;
     }
-    slideshow.setAttribute('src', resultsArray[currIndex].data.thumbnail);
+    slideshow.setAttribute('src', resultsArray[i].data.thumbnail);
 }
 
 const startSlideshow = () => {
@@ -84,9 +85,8 @@ const startSlideshow = () => {
 }
 
 const getSearchResults = () => {
-    //fetch from the reddit API
     //string interpolation
-    fetch(`${baseEndpoint}${input.value}`)
+    fetch(`${baseEndpoint}+${input.value}`)
     .then(response => {
         return response.json();
     })
@@ -108,7 +108,6 @@ document.addEventListener('DOMContentLoaded', ()=> {
     resetButton = document.getElementById('reset');
 
     searchForm.addEventListener('submit', (e)=>{
-        console.log(input.value);
         e.preventDefault();
         // slideshow appears
         slideshow.style.display = 'block';
@@ -123,7 +122,5 @@ document.addEventListener('DOMContentLoaded', ()=> {
         searchForm.style.display = '';
         resultsArray = [];
         clearInterval(interval);
-    })
-    
+    }) 
 })
-
